@@ -1,0 +1,17 @@
+<!--pages/openStore/openStoreGoodsList.wxml-->
+<scroll-view scroll-y="true"   class="store-container" style="padding-bottom:20rpx;;height: 1200rpx;background-image:url('../../images/bg_open_store_goods_list.png')">
+  <view class="goods_container">
+    <block wx:for="{{listdata}}" wx:key="key">
+      <view class='gridview-item'>
+        <image class="goods-img" src="../../images/wx.png"></image>
+        <view class="ellipsis-2lines">风靡全球大家都在使用的 茶籽薄荷餐具净 </view>
+        <view class="buttom-price">
+          <text class="price">¥</text>
+          <text class="price-text">2</text>
+          <button class="buy-now">选我</button>
+        </view>
+      </view>
+
+    </block>
+  </view>
+</scroll-view>

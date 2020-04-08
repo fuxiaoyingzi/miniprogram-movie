@@ -1,0 +1,9 @@
+@import "../movie-star-template/movie-star-template.wxss";
+.item-img{
+  width: 200rpx;
+  height: 200rpx;
+}
+.item-title{
+  font-size: 24rpx;
+  color: #ccc;
+}

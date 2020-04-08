@@ -1,0 +1,34 @@
+<!--logs.wxml-->
+<view>
+  <!-- flex布局 -->
+  <view class="test-flex">
+    <image class="item_author" src="../../images/default_head_image.png"></image>
+    <view class="a" catchtap="showMovie">电影模块</view>
+    <view class="b">方块2</view>
+    <view class="c">方块3</view>
+    <view class="a">方块1</view>
+    <view class="b">方块2</view>
+    <view class="c">方块3</view>
+  </view>
+  <!-- 播放视频 -->
+  <view>
+    <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+    <button type="primary" bindtap="audioPlay">播放</button>
+    <button type="primary" bindtap="audioPause">暂停</button>
+    <button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+    <button type="primary" bindtap="audioStart">回到开头</button>
+  </view>
+  <!-- 拍照 -->
+  <view>
+    <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+    <button type="primary" bindtap="takePhoto">拍照</button>
+    <view>预览</view>
+    <image mode="widthFix" src="{{src}}"></image>
+  </view>
+  <!-- log记录 -->
+  <view class="container log-list">
+    <block wx:for="{{logs}}" wx:for-item="log">
+      <text class="log-item">{{index + 1}}. {{log}}</text>
+    </block>
+  </view>
+</view>

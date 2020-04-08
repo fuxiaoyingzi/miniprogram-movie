@@ -1,0 +1,10 @@
+<template name="movieStar">
+  <view class="star-container">
+    <view class="star-img-container">
+      <block wx:for="{{stars}}">
+        <image  src="{{item}}"></image>
+      </block>
+    </view>
+    <text class="star-text">{{score}}</text>
+  </view>
+</template>

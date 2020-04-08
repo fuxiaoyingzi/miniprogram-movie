@@ -1,0 +1,11 @@
+<!--wxml 小程序骨架-->
+<!-- wxss 小程序样式 -->
+<!-- js 小程序逻辑 -->
+<!-- json 小程序配置文件 -->
+<view class="container">
+  <image class="userAvatar"  src="../../images/default_head_image.png"></image>
+  <view class="title">hello 付小影子</view>
+  <view class="motoContainer" bindtap="toHome">
+    <text class="moto">开启小程序之旅</text>
+  </view>
+</view>

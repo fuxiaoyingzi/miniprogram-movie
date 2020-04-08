@@ -1,0 +1,34 @@
+/* pages/movies/movie.wxss */
+@import "movie-list-template/movie-list-template.wxss";
+
+page {
+  height: 100%;
+}
+
+.movie-container {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+.search-container {
+  height: 60rpx;
+  flex-direction: row;
+  display: flex;
+  padding-left: 20rpx;
+  padding-right: 33rpx;
+  align-items: center;
+  justify-content: center
+}
+
+.input-text {
+  margin-left: 15rpx;
+  font-size: 22rpx;
+  padding-right: 10rpx;
+   color: gray
+}
+
+.close-search {
+  width: 18rpx;
+  height: 18rpx;
+  padding: 18rpx;
+}

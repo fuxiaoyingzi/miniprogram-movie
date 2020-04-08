@@ -1,0 +1,56 @@
+<!--pages/new/newPage.wxml-->
+<!-- 导入模板文件 -->
+<import src="news-item/news-item-template.wxml" />
+<view>
+  <!-- 轮播图 -->
+  <swiper indicator-dots="true" autoplay="true">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <view class="swip_item">{{item}}</view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 新闻列表item -->
+  <view class="item_news" wx:for="{{post_content}}">
+    <!-- 复用模板文件 ... 展开对象 -->
+    <view catchtap="toNewsDetail" data-newsId="{{item.postId}}">
+      <template is="newsItem" data="{{...item}}"></template>
+    </view>
+  </view>
+</view>
+
+<!-- 
+<标签 属性名1="属性值" 属性名2 ="属性值"></标签>
+标签可以嵌套标签
+<view>
+<text></text>
+</view>
+WXML 通过 {{变量名}} 来绑定 WXML 文件和对应的 JavaScript 文件中的 data 对象属性。
+
+属性值也可以动态的去改变，有所不同的是，属性值必须被包裹在双引号中
+ <image class="item_author" src="{{item.author_img}}"></image>
+
+ 通过 {{ 变量名 }} 语法可以使得 WXML 拥有动态渲染的能力，除此外还可以在 {{ }} 内进行简单的逻辑运算
+ ?: 三目运算
+ <text>{{ a === 10? "变量 a 等于10": "变量 a 不等于10"}}</text>
+
+ {{ }}中还可以直接放置数字、字符串或者是数组
+
+ <text>{{[1,2,3]}}</text>  输出 1,2,3
+
+<text>{{"hello world"}}</text> 输出 hello world
+
+WXML 中，使用 wx:if="{{condition}}" 来判断是否需要渲染该代码块：
+<view wx:if = "{{condition}}">true</view>
+
+使用 wx:elif 和 wx:else 来添加一个 else 块：
+<view wx:if="{{length > 5}}">1</view>
+ <view wx:elif="{{length > 2}}">2</view>
+ <view wx:else>3</view>
+
+因为 wx:if 是一个控制属性，需要将它添加到一个标签上。如果要一次性判断多个组件标签，可以使用一个 <block/> 标签将多个组件包装起来，并在上边使用 wx:if 控制属性。
+<block wx:if = "{{true}}">
+ <view>view1</view>
+ <view>view2</view>
+ </block>
+ -->

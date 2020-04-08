@@ -1,0 +1,13 @@
+/**index.wxss**/
+.btn_area{
+  align-content: true;
+
+}
+.body_view{
+  align-content: true;
+  background-color: chartreuse;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center
+  
+}

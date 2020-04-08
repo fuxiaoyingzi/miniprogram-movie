@@ -1,0 +1,8 @@
+<view class="btn_area">
+  <view class="body_view">
+    <text>{{text}}</text>
+    <button bindtap="add">add line</button>
+    <button bindtap="remove">remove line</button>
+    <button bindtap="toDetail">跳转新界面</button>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+
+.log-item {
+  margin: 10rpx;
+}
+
+.test-flex {
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item_author {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.a, .b, .c {
+  text-align: center;
+  height: 180rpx;
+  line-height: 180rpx;
+  margin-top: 10px;
+  width: 200rpx;
+  margin-left: 10px;
+  background-color: #ff0;
+}

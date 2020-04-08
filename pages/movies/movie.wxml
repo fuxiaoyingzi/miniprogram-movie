@@ -1,0 +1,11 @@
+<!--pages/movies/movie.wxml-->
+<import src="movie-list-template/movie-list-template.wxml" />
+<view class="movie-container">
+  <view class="search-container" catchtap="searchMovie">
+    <icon type="search" size="15" color="gray" />
+    <text class="input-text">请输入要搜索的电影名字</text>
+  </view>
+  <template is="movieList" data="{{...inTheaters}}"></template>
+  <template is="movieList" data="{{...comingSoon}}"></template>
+  <template is="movieList" data="{{...top250}}"></template>
+</view>

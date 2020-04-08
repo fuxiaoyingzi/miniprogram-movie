@@ -1,0 +1,15 @@
+<!--pages/movies/search/searchMovie.wxml-->
+<import src="../movie-grid-template/movie-grid-template.wxml" />
+<view>
+  <view class="search-bar">
+    <view class="search-container">
+      <icon type="search" size="15" color="gray" />
+      <input class="input-text" value="{{inputValue}}" placeholder="请输入要搜索的电影名字" confirm-type="search" focus="true" bindinput="onBindInput" bindconfirm="onSearchConfirm"></input>
+      <image wx:if="{{hasContainer}}" catchtap="clearInput" class="close-search" src="../../../images/icon/xx.png"></image>
+    </view>
+    <button bindtap="searchMovie" class="search-btn">搜索</button>
+  </view>
+  <view>
+    <template is="movieGrid" data="{{movies}}"></template>
+  </view>
+</view>

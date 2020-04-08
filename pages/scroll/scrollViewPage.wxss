@@ -1,0 +1,26 @@
+/* pages/scroll/scrollViewPage.wxss */
+.page-section-spacing{
+  margin-top: 10rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 300rpx;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 100%;
+  height: 300rpx;
+}
+.demo-text-1{
+  background-color: #f0f;
+}
+
+.demo-text-2{
+  background-color: #f00;
+}
+
+.demo-text-3{
+  background-color: #00f;
+}

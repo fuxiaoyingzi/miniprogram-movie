@@ -1,0 +1,16 @@
+<!-- 定义模板 view -->
+<template name="newsItem">
+  <view class="item_author_date">
+    <image class="item_author" src="{{avatar}}"></image>
+    <text class="item_date">{{date}}</text>
+  </view>
+  <text class="item_title">{{title}}</text>
+  <image class="item_img" src="{{imgSrc}}" mode="scaleToFill"></image>
+  <text class="item_desc">{{content}}</text>
+  <view class="item_bottom">
+    <image class="item_collec_img" src="../../images/icon/icon_one.png"></image>
+    <text class="item_collec_text">{{collection}}</text>
+    <image class="item_collec_img2" src="../../images/icon/icon_two.png"></image>
+    <text class="item_collec_text">{{reading}}</text>
+  </view>
+</template>

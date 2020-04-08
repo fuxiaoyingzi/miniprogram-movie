@@ -1,0 +1,59 @@
+.item_author {
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+}
+
+.item_date {
+  margin-left: 10px;
+  font-size: 22rpx;
+  color: #999;
+}
+
+.item_title {
+  margin-top: 10px;
+  font-size: 32rpx;
+  font-weight: 800;
+}
+
+.item_img {
+  margin-top: 10px;
+  height: 100px;
+  width: 100%;
+}
+
+.item_desc {
+  margin-top: 5px;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #999;
+}
+
+.item_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.item_collec_img {
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+}
+
+.item_collec_text {
+  float: left;
+  vertical-align: middle;
+  margin-left: 5rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.item_collec_img2 {
+  width: 30rpx;
+  float: left;
+  height: 30rpx;
+  margin-left: 6px;
+}

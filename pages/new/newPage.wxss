@@ -1,0 +1,28 @@
+/* pages/new/newPage.wxss */
+/* 引入 公用 css文件 */
+@import "news-item/news-item-template.wxss";
+page {
+  background-color: #ededed;
+  padding-bottom: 10px;
+}
+
+.swip_item {
+  width: 100%;
+  height: 500rpx;
+  background-color: #ec87ec;
+  text-align: center;
+}
+
+.item_news {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: #fff;
+  padding-left: 15rpx;
+  padding-right: 30rpx;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+
